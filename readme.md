@@ -1,5 +1,6 @@
 # Discord Bot Guide
 ![Discord Bot](Preview.jpg/)
+
 Why is he so annoyed?
 ## Overview
 This guide will help you set up a Discord bot that uses a local language model to respond to messages. The bot is built using Python and the `discord.py` library, and it leverages models from Hugging Face.
