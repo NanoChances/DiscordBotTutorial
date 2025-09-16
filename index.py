@@ -34,9 +34,9 @@ llama_model_path = hf_hub_download(
 )
 llm = Llama(
     model_path=llama_model_path,
-    n_ctx=2048,
-    n_batch=512,
-    n_threads=6,
+    n_ctx=1024,
+    n_batch=64,
+    n_threads=2,
     temperature=1.7,
     max_tokens=100,
     verbose=False,
