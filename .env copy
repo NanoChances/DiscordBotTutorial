@@ -1,0 +1,2 @@
+# Add your Discord bot token here and rename this file to .env
+DISCORD_BOT_TOKEN="YOUR_BOT_TOKEN_HERE"
