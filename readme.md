@@ -80,7 +80,7 @@ python index.py
 | Token not working | Double-check that you've copied the token correctly from the Discord Developer Portal and that it's correctly set in your `.env` file. |
 | Bot not responding | Ensure the bot is online in your server and that it has the necessary permissions to read and send messages. |
 | Model is too large | Try using a smaller model like TinyLlama 1.1B. |
-| Llama-cpp fails to install | Make sure you have a C++ build environment set up. On Windows, you can install the Build Tools for Visual Studio. |
+| Llama-cpp fails to install | Make sure you have a C++ build environment set up. On Windows, you can install the [Build Tools for Visual Studio](https://visualstudio.microsoft.com/visual-cpp-build-tools/). |
 
 ## Changing the Model
 To change the model, modify the `MODEL_PATH` variable in `index.py` to point to your desired model. For example:
