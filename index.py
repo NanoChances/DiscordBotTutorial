@@ -33,14 +33,14 @@ llama_model_path = hf_hub_download(
     filename="mistral-7b-instruct-v0.2.Q4_K_M.gguf"
 )
 llm = Llama(
-    model_path=llama_model_path,
-    n_ctx=1024,
-    n_batch=64,
-    n_threads=2,
-    temperature=1.7,
-    max_tokens=100,
-    verbose=False,
-    stop=["</s>", "\nUser:", "\n"]
+    model_path=llama_model_path,    # Selected model
+    n_ctx=1024,                     # context size, how much text you can give before the model forgets
+    n_batch=64,                     # batch size, how many tokens to process at once
+    n_threads=2,                    # number of threads, adjust based on your CPU (more threads = faster but more CPU usage)
+    temperature=1.7,                # sampling temperature, higher = more creative, lower = more focused
+    max_tokens=100,                 # maximum tokens to generate, aka size of the answer
+    verbose=False,                  # Verbose output, aka how much info is print to console
+    stop=["</s>", "\nUser:", "\n"]  # stop tokens, aka stop generating when one of these is found
 )
 
 SYSTEM_PROMPT = """
